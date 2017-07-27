@@ -1,6 +1,6 @@
 {
     "name": "iframe-dnd-shim",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Drag and drop fallback for support of the iframes on mobile devices, where HTML drag and drop API is emulated",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

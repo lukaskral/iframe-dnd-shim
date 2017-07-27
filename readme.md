@@ -36,3 +36,6 @@ import { encodeDragEvents } from 'iframe-dnd-shim';
 decodeDragEvents();
 ```
 After you do this, received messages are transcoded to the drag events and dispatched on the correct dom nodes.
+
+## Limitations
+It is only possible to drag from outer page into an iframe hosted within that page. It's not possible to drag from inside of the frame and drop to the host page. It's also not possible to drag'n'drop into different window.
