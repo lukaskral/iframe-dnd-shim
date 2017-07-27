@@ -86,7 +86,7 @@ function encodeDragEvents(frame: HTMLIFrameElement, customOptions: IEncodeDragEv
 let __lastElement: Element | null = null;
 
 function handleDnDMessage(windowObject: any, event: MessageEvent) {
-    var element = document.elementFromPoint(event.data.offsetX, event.data.offsetY);
+    var element = windowObject.document.elementFromPoint(event.data.offsetX, event.data.offsetY);
 
     var eventData = event.data;
     eventData.bubbles = true;
