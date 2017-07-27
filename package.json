@@ -1,0 +1,37 @@
+{
+    "name": "iframe-dnd-shim",
+    "version": "1.0.0",
+    "description": "Drag and drop fallback for support of the iframes on mobile devices, where HTML drag and drop API is emulated",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": "https://github.com/lukaskral/iframe-dnd-shim.git",
+    "files": [
+        "dist/index.js",
+        "dist/index.d.ts",
+        "readme.md"
+    ],
+    "scripts": {
+        "build": "npm run build:bundle",
+        "build:bundle": "./node_modules/.bin/webpack",
+        "watch": "cross-env WEBPACK_WATCH=true npm run build:bundle",
+        "prepublish": "npm run build"
+    },
+    "peerDependencies": {
+    },
+    "devDependencies": {
+        "cross-env": "^5.0.0",
+        "dts-bundle": "^0.7.2",
+        "jest": "^18.1.0",
+        "source-map-loader": "^0.2.0",
+        "ts-jest": "^18.0.3",
+        "ts-loader": "^2.0.2",
+        "typescript": "^2.2.1",
+        "webpack": "^2.6.0"
+    },
+
+    "author": {
+        "name": "Lukas Kral",
+        "email": "mail@lukaskral.eu"
+    },
+    "license": "MIT"
+}

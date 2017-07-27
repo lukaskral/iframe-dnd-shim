@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "baseUrl": ".",
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "jsx": "react",
+        "lib": ["dom", "es7"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "outDir": "./dist",
+        "paths": {
+            "pg-face/*": ["src/pg-face/src/*"],
+            "pg-lab/*": ["src/pg-lab/src/*"],
+            "icons/*": ["images/icons/*"],
+            "utils": ["src/pg-face/src/utils"],
+            "pg-constants": ["src/constants"]
+        },
+        "removeComments": false,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "target": "ES5"
+    },
+    "include": [
+        "./src/**/*.tsx",
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules",
+        "**/*.test.*"
+    ]
+}

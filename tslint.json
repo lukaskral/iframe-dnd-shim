@@ -1,0 +1,18 @@
+{
+    "extends": "tslint:recommended",
+    "rules": {
+        "array-type": [true, "generic"],
+        "curly": true,
+        "member-access": false,
+        "max-classes-per-file": [true, 3],
+        "no-consecutive-blank-lines": [true, 2],
+        "no-console": [false],
+        "no-var-requires": false,
+        "one-line": [false, "check-catch", "check-finally", "check-else"],
+        "quotemark": [true, "single", "jsx-double", "avoid-escape"],
+        "trailing-comma": [
+            true, {"multiline": "never", "singleline": "never"}
+        ],
+        "radix": false
+    }
+}
